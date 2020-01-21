@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2FE59DAB9951C2129DB6CB /* Pods_GoogleSSO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751B72DFA3F7318CA87A0D48 /* Pods_GoogleSSO.framework */; };
 		563344BE23D57BD1001F1E45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563344BD23D57BD1001F1E45 /* AppDelegate.swift */; };
 		563344C023D57BD1001F1E45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563344BF23D57BD1001F1E45 /* SceneDelegate.swift */; };
 		563344C223D57BD1001F1E45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563344C123D57BD1001F1E45 /* ViewController.swift */; };
@@ -14,6 +15,7 @@
 		563344C823D57BD1001F1E45 /* GoogleSSO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 563344C623D57BD1001F1E45 /* GoogleSSO.xcdatamodeld */; };
 		563344CA23D57BD3001F1E45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563344C923D57BD3001F1E45 /* Assets.xcassets */; };
 		563344CD23D57BD3001F1E45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563344CB23D57BD3001F1E45 /* LaunchScreen.storyboard */; };
+		563344D923D589A8001F1E45 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 563344D823D589A8001F1E45 /* credentials.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		563344C923D57BD3001F1E45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		563344CC23D57BD3001F1E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563344CE23D57BD3001F1E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		563344D823D589A8001F1E45 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		575E425556AC44EAC914BF48 /* Pods-GoogleSSO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSSO.release.xcconfig"; path = "Target Support Files/Pods-GoogleSSO/Pods-GoogleSSO.release.xcconfig"; sourceTree = "<group>"; };
+		751B72DFA3F7318CA87A0D48 /* Pods_GoogleSSO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleSSO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4D8FAE9F1BBABEBB23AD81 /* Pods-GoogleSSO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSSO.debug.xcconfig"; path = "Target Support Files/Pods-GoogleSSO/Pods-GoogleSSO.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2FE59DAB9951C2129DB6CB /* Pods_GoogleSSO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50193F6D5BE1FB8030EDC50B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D8FAE9F1BBABEBB23AD81 /* Pods-GoogleSSO.debug.xcconfig */,
+				575E425556AC44EAC914BF48 /* Pods-GoogleSSO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		563344B123D57BD1001F1E45 = {
 			isa = PBXGroup;
 			children = (
 				563344BC23D57BD1001F1E45 /* GoogleSSO */,
 				563344BB23D57BD1001F1E45 /* Products */,
+				50193F6D5BE1FB8030EDC50B /* Pods */,
+				663D1E6FDCD67C4E5B3C546E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +76,7 @@
 		563344BC23D57BD1001F1E45 /* GoogleSSO */ = {
 			isa = PBXGroup;
 			children = (
+				563344D823D589A8001F1E45 /* credentials.plist */,
 				563344BD23D57BD1001F1E45 /* AppDelegate.swift */,
 				563344BF23D57BD1001F1E45 /* SceneDelegate.swift */,
 				563344C123D57BD1001F1E45 /* ViewController.swift */,
@@ -70,6 +89,14 @@
 			path = GoogleSSO;
 			sourceTree = "<group>";
 		};
+		663D1E6FDCD67C4E5B3C546E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				751B72DFA3F7318CA87A0D48 /* Pods_GoogleSSO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 563344D123D57BD3001F1E45 /* Build configuration list for PBXNativeTarget "GoogleSSO" */;
 			buildPhases = (
+				0ECE34EE45B158CDCE3CAB93 /* [CP] Check Pods Manifest.lock */,
 				563344B623D57BD1001F1E45 /* Sources */,
 				563344B723D57BD1001F1E45 /* Frameworks */,
 				563344B823D57BD1001F1E45 /* Resources */,
+				EFEA8A0E69FE82A857B32792 /* [CP] Embed Pods Frameworks */,
+				16DCED6D46A1DE19BEFFB6A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,12 +159,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				563344CD23D57BD3001F1E45 /* LaunchScreen.storyboard in Resources */,
+				563344D923D589A8001F1E45 /* credentials.plist in Resources */,
 				563344CA23D57BD3001F1E45 /* Assets.xcassets in Resources */,
 				563344C523D57BD1001F1E45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ECE34EE45B158CDCE3CAB93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleSSO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16DCED6D46A1DE19BEFFB6A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleSSO/Pods-GoogleSSO-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleSSO/Pods-GoogleSSO-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleSSO/Pods-GoogleSSO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFEA8A0E69FE82A857B32792 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleSSO/Pods-GoogleSSO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleSSO/Pods-GoogleSSO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleSSO/Pods-GoogleSSO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		563344B623D57BD1001F1E45 /* Sources */ = {
@@ -286,6 +376,7 @@
 		};
 		563344D223D57BD3001F1E45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA4D8FAE9F1BBABEBB23AD81 /* Pods-GoogleSSO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +395,7 @@
 		};
 		563344D323D57BD3001F1E45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 575E425556AC44EAC914BF48 /* Pods-GoogleSSO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_GoogleSSO {
+  umbrella header "Pods-GoogleSSO-umbrella.h"
+
+  export *
+  module * { export * }
+}
