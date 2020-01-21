@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleSignIn
+import Kingfisher
 
 class ViewController: UIViewController {
 
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var UserImage: UIImageView!
     override func viewDidAppear(_ animated: Bool) {
         toggleAuthUI()
     }
@@ -46,6 +48,10 @@ class ViewController: UIViewController {
     func toggleAuthUI() {
         if let _ = GIDSignIn.sharedInstance()?.currentUser?.authentication {
             username.text = "Hello, \(String((AppDelegate.googleUser?.profile.name)!))."
+            var u:String = (AppDelegate.googleUser?.profile.imageURL(withDimension: 200)!.absoluteString)!
+            //print(u)
+            let url = URL(string: u)
+            UserImage.kf.setImage(with: url)
         } else {
             username.text = "Please Login"
         }

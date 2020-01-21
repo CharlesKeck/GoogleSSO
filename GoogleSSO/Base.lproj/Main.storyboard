@@ -40,6 +40,10 @@
                                     <action selector="SignOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mn9-Aa-yfb"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uW7-Bx-pND">
+                                <rect key="frame" x="161" y="246" width="92" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -53,6 +57,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="UserImage" destination="uW7-Bx-pND" id="Zwl-df-iAJ"/>
                         <outlet property="btnSignIn" destination="Il4-v3-0vX" id="8t9-SQ-w0v"/>
                         <outlet property="btnSignOut" destination="yq9-x0-0qG" id="Mb5-yp-vPA"/>
                         <outlet property="username" destination="CEW-95-VJa" id="X6G-3q-Nes"/>
@@ -60,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="119"/>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
         </scene>
     </scenes>
 </document>

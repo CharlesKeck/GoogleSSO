@@ -7,5 +7,5 @@ target 'GoogleSSO' do
 
   # Pods for GoogleSSO
   pod 'GoogleSignIn', '~> 5.0.2'
-
+  pod 'Kingfisher', '~> 5.13'
 end
